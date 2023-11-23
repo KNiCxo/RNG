@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RNG</title>
+  <link rel="stylesheet" href="rng.css">
+</head>
+<body>
+  <button id="rng-button" class="tab-button default-tab">Random Number Generator</button>
+  <button id="list-button" class="tab-button">List Randomizer</button>
+
+  <div class="wrapper">
+    <div id="rng" class="tab-div">
+      <div id="output">
+        <label for="result">Result: </label>
+        <span></span>
+      </div>
+
+      <div id="min-input">
+        <label for="min">Min: </label>
+        <input class="min" type="number">
+      </div>
+
+      <div id="max-input">
+        <label for="max">Max: </label>
+        <input class="max" type="number">
+      </div>
+
+      <button id="generate-button">Generate</button>
+    </div>
+
+    <div id="list" class="tab-div list">
+      <label for="list-input">Enter List Items: </label> <br>
+      <textarea id="list-input" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+  <script src="rng.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Roboto Medium font */
+@font-face {
+  src: url(fonts/Roboto/Roboto-medium.ttf);
+  font-family: roboto-medium;
+}
+
+/* Oswald Regular font */
+@font-face {
+  src: url(fonts/Oswald/static/Oswald-Regular.ttf);
+  font-family: oswald-regular;
+}
+
+body, html {
+  background-color: rgb(41, 39, 39);
+  margin: 0;
+}
+
+.tab-button {
+  color: white;
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  float: left;
+  border: none;
+  font-family: oswald-regular;
+  font-size: 25px;
+}
+
+.tab-button:hover {
+  cursor: pointer;
+}
+
+#rng-button {
+  background-color: rgb(41, 39, 39);
+}
+
+#list-button {
+  background-color: rgb(35, 34, 34);
+}
+
+.tab-unselected:hover {
+  background-color: rgb(58, 56, 56)!important;
+}
+
+.tab-div {
+  color: white;
+  display: none;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*
+#rng {
+  background-color: blue;
+  width: 300px;
+  height: 200px;
+}*/
+
+.wrapper {
+  padding-top: 200px;
+  text-align: center;
+}
