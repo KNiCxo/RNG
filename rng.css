@@ -10,11 +10,14 @@
   font-family: oswald-regular;
 }
 
+/* Styling for body and HTML */
 body, html {
   background-color: rgb(41, 39, 39);
   margin: 0;
+  font-family: oswald-regular;
 }
 
+/* Styling for tab buttons */
 .tab-button {
   color: white;
   width: 50%;
@@ -30,18 +33,28 @@ body, html {
   cursor: pointer;
 }
 
+/* Styling for RNG tab button */
 #rng-button {
   background-color: rgb(41, 39, 39);
 }
 
+/* Styling for List Randomizer button */
 #list-button {
   background-color: rgb(35, 34, 34);
 }
 
+/* Styling for unselected tab */
 .tab-unselected:hover {
   background-color: rgb(58, 56, 56)!important;
 }
 
+/* Styling for wrapper */
+.wrapper {
+  padding-top: 200px;
+  text-align: center;
+}
+
+/* Styling for tab div content */
 .tab-div {
   color: white;
   display: none;
@@ -56,7 +69,13 @@ body, html {
   height: 200px;
 }*/
 
-.wrapper {
-  padding-top: 200px;
-  text-align: center;
+/* Styling for RNG result */
+#result {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: green;
+  font-size: 25px;
+  font-family: roboto-medium;
+  line-height: 150px;
 }

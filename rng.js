@@ -1,52 +1,45 @@
-const rngButton = document.getElementById('rng-button');
-const listButton = document.getElementById('list-button');
+// Get min and max inputs
+let minInput = document.getElementById('min');
+let maxInput = document.getElementById('max');
 
-const RNG = document.getElementById('rng');
-const listRandomizer = document.getElementById('list');
+// Get generate button and result elements
+const generateBtn = document.getElementById('generate-button');
+const result = document.getElementById('result');
 
-rngButton.addEventListener('click', () => {
-  changeTab('rng');
-});
+// Clear inputs on page load
+minInput.value = '';
+maxInput.value = '';
 
-listButton.addEventListener('click', () => {
-  changeTab('list');
-});
+// Generates a random number between the min and max ranges when pressed
+generateBtn.addEventListener('click', generateRandom);
 
-function changeTab(tabName) {
-  rngButton.classList.remove('tab-unselected');
-  listButton.classList.remove('tab-unselected');
-  
-  if (tabName == 'rng') {
-    listButton.classList.add('tab-unselected');
+// Generates a random number when called
+function generateRandom() {
+  // Store inputs as numbers
+  let min = Number(minInput.value);
+  let max = Number(maxInput.value);
 
-    listButton.style.backgroundColor = "rgb(35, 34, 34)";
-    listRandomizer.style.display = "none";
-
-    rngButton.style.backgroundColor = "rgb(41, 39, 39)";
-    RNG.style.display = "block";
-  } else {
-    rngButton.classList.add('tab-unselected');
-
-    listButton.style.backgroundColor = "rgb(41, 39, 39)";
-    listRandomizer.style.display = "block";
-
-    rngButton.style.backgroundColor = "rgb(35, 34, 34)";
-    RNG.style.display = "none";
+  // If either inputs are blank or NaN, return
+  if (min === '' || max === '') {
+    minInput.value = '';
+    maxInput.value = '';
+    return;
   }
 
-/*
-  // Remove the background color of all tablinks/buttons
-  let tabButtons = document.getElementsByClassName("tab-button");
-  for (i = 0; i < tabButtons.length; i++) {
-    tabButtons[i].style.backgroundColor = "";
+  // If min > max, switch values and update input forms
+  if (min > max) {
+    const temp = min;
+    min = max;
+    max = temp;
+
+    minInput.value = min;
+    maxInput.value = max;
   }
 
-  // Show the specific tab content
-  document.getElementById(pageName).style.display = "block";
+  // Converts decimals into whole numbers if there are any
+  min = Math.floor(min);
+  max = Math.ceil(max);
 
-  // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;*/
+  // Updates result element with randomly generated number
+  result.innerHTML = Math.floor(Math.random() * (max - min + 1) + min);
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.querySelector(".default-tab").click(); 
