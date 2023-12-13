@@ -79,3 +79,8 @@ body, html {
   font-family: roboto-medium;
   line-height: 150px;
 }
+
+/* Styling for Randomized List Table */
+#list-table {
+  width: 100%;
+}
