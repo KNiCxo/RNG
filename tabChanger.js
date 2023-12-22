@@ -32,22 +32,26 @@ function changeTab(tabName) {
     listButton.classList.add('tab-unselected');
 
     // Change color of unselected tab and remove from view
-    listButton.style.backgroundColor = "rgb(35, 34, 34)";
+    listButton.style.backgroundColor = "rgb(44, 42, 42)";
+    listButton.style.color = "white";
     listRandomizer.style.display = "none";
 
     // Change color of selected tab and make visible
-    rngButton.style.backgroundColor = "rgb(41, 39, 39)";
+    rngButton.style.backgroundColor = "rgb(32, 30, 30)";
+    rngButton.style.color = "rgb(175, 228, 249)";
     RNG.style.display = "block";
   } else {
     // Add hover style to other tab
     rngButton.classList.add('tab-unselected');
 
     // Change color of selected tab and make visible
-    listButton.style.backgroundColor = "rgb(41, 39, 39)";
+    listButton.style.backgroundColor = "rgb(32, 30, 30)";
+    listButton.style.color = "rgb(175, 228, 249)";
     listRandomizer.style.display = "block";
 
     // Change color of unselected tab and remove from view
-    rngButton.style.backgroundColor = "rgb(35, 34, 34)";
+    rngButton.style.backgroundColor = "rgb(44, 42, 42)";
+    rngButton.style.color = "white";
     RNG.style.display = "none";
   }
 }

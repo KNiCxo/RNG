@@ -1,3 +1,15 @@
+/* *** TEMPORARY CODE *** */
+/* Styling for RNG tab button */
+#rng-button {
+  background-color: rgb(35, 33, 33);
+  color: rgb(175, 228, 249);
+}
+
+/* Styling for List Randomizer button 
+#list-button {
+  background-color: rgb(44, 42, 42);
+}
+
 /* Roboto Medium font */
 @font-face {
   src: url(fonts/Roboto/Roboto-medium.ttf);
@@ -20,27 +32,28 @@ body, html {
 /* Styling for tab buttons */
 .tab-button {
   color: white;
-  width: 50%;
+  width: 100%;
   height: 100px;
   padding: 10px;
-  float: left;
-  border: none;
+  border: solid rgb(20, 19, 19) 4px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
   font-family: oswald-regular;
-  font-size: 25px;
+  font-size: 30px;
+  text-shadow: 3px 3px black;
+}
+
+.tab-button:first-child {
+  border-top: solid rgb(20, 19, 19) 4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
 }
 
 .tab-button:hover {
   cursor: pointer;
-}
-
-/* Styling for RNG tab button */
-#rng-button {
-  background-color: rgb(41, 39, 39);
-}
-
-/* Styling for List Randomizer button */
-#list-button {
-  background-color: rgb(35, 34, 34);
 }
 
 /* Styling for unselected tab */
@@ -50,7 +63,7 @@ body, html {
 
 /* Styling for wrapper */
 .wrapper {
-  padding-top: 200px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -62,25 +75,97 @@ body, html {
   margin: 0 auto;
 }
 
-/*
-#rng {
-  background-color: blue;
-  width: 300px;
-  height: 200px;
-}*/
+/* Styling for result label */
+#result-label {
+  font-size: 45px;
+  text-shadow: 3px 3px black;
+}
 
 /* Styling for RNG result */
 #result {
-  width: 200px;
+  background-color: rgb(49, 47, 47);
+  width: 265px;
   height: 150px;
-  margin: 0 auto;
-  background-color: green;
-  font-size: 25px;
+  margin: 20px auto;
+  border: solid black 2px;
+  border-radius: 15px;
+  text-align: center;
   font-family: roboto-medium;
+  font-size: 60px;
+  text-shadow: 3px 3px black;
   line-height: 150px;
+}
+
+/* Styling for min and max labels */
+#min-label, #max-label {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-shadow: 3px 3px black;
+}
+
+/* Styling for min and max inputs */
+#min, #max {
+  color: white;
+  background-color: rgb(41, 39, 39);
+  width: 175px;
+  height: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 2px;
+  border: none;
+  border-bottom: solid rgb(178, 178, 224) 3px;
+  outline: none;
+  text-align: center;
+  font-family: roboto-medium;
+  font-size: 35px;
+}
+
+/* Styling for list label */
+#list-label {
+  font-size: 45px;
+  text-shadow: 3px 3px black;
+}
+
+/* Styling for list input */
+#list-input {
+  color: white;
+  background-color: rgb(49, 47, 47);
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  padding: 12px;
+  font-family: roboto-medium;
+  font-size: 20px;
+  text-shadow: 3px 3px black;
+  line-height: 32px;
+  border: solid black 2px;
+  border-radius: 15px;
+  outline: none;
+  resize: none;
+}
+
+/* Styling for RNG and list randomizer buttons */
+#randomize, #generate-button {
+  color: white;
+  background-color: rgb(178, 178, 224);
+  width: 300px;
+  height: 50px;
+  margin: 15px 0px;
+  font-family: oswald-regular;
+  font-size: 24px;
+  text-shadow: 2px 2px black;
+  border: solid black 4px;
+  border-radius: 10px;
+}
+
+#randomize:hover, #generate-button:hover {
+  cursor: pointer;
+  background-color: rgb(156, 156, 212);
 }
 
 /* Styling for Randomized List Table */
 #list-table {
   width: 100%;
+  font-size: 22px;
+  line-height: 45px;
 }

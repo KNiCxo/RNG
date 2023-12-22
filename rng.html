@@ -9,8 +9,8 @@
 </head>
 <body>
   <!-- RNG and List Randomizer tabs -->
-  <button id="rng-button" class="tab-button default-tab">Random Number Generator</button>
-  <button id="list-button" class="tab-button">List Randomizer</button>
+  <button id="rng-button" class="tab-button">Random Number Generator</button>
+  <button id="list-button" class="tab-button default-tab">List Randomizer</button>
 
   <!-- Wrapper to keep content within a certain width -->
   <div class="wrapper">
@@ -18,19 +18,19 @@
     <div id="rng" class="tab-div">
       <!-- Displays result of random number generation -->
       <div id="output">
-        <label for="result">Result: </label>
+        <label id="result-label" for="result">Result: </label>
         <p id="result">0</p>
       </div>
 
       <!-- Input form for minimum value -->
       <div id="min-input">
-        <label for="min">Min: </label>
+        <label id="min-label" for="min">Min: </label>
         <input id="min" type="number">
       </div>
 
       <!-- Input form for maximum value-->
       <div id="max-input">
-        <label for="max">Max: </label>
+        <label id="max-label" for="max">Max: </label>
         <input id="max" type="number">
       </div>
 
@@ -41,7 +41,7 @@
     <!-- List Randomizer Content-->
     <div id="list" class="tab-div list">
       <!-- Input form for list -->
-      <label for="list-input">Enter List Items: </label> <br>
+      <label id="list-label" for="list-input">Enter List Items: </label> <br>
       <textarea id="list-input" cols="30" rows="10"></textarea> <br>
 
       <!-- Button to generate random list -->
