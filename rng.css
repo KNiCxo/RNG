@@ -29,6 +29,11 @@ body, html {
   font-family: oswald-regular;
 }
 
+/* Styling for h1 tag */
+h1 {
+  display: none;
+}
+
 /* Styling for tab buttons */
 .tab-button {
   color: white;
@@ -168,4 +173,95 @@ body, html {
   width: 100%;
   font-size: 22px;
   line-height: 45px;
+}
+
+/* Styling for different widths */
+@media only screen and (min-width: 800px) {
+  /* Styling for h1 */
+  h1 {
+    display: block;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    font-family: oswald-regular;
+    font-size: 145px;
+    text-shadow: 8px 8px black;
+  }
+
+  /* Styling for button div */
+  .button-div {
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+
+  /* Styling for tab buttons */
+  .tab-button {
+    width: 300px;
+    float: left;
+    font-size: 27px;
+    border: solid rgb(20, 19, 19) 4px;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+  }
+
+  /* Styling for tab div content */
+  .tab-div {
+    background-color: rgb(32, 30, 30);
+    width: 592px;
+    position: relative;
+    top: -5px;
+    border: solid rgb(20, 19, 19) 4px;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /* Styling for unselected tab */
+  .tab-unselected {
+    border-bottom: solid rgb(20, 19, 19) 4px;
+  }
+
+  /* Styling for result label */
+  #result-label {
+    line-height: 110px;
+  }
+
+  /* Styling for RNG result */
+  #result {
+    margin: 0 auto 20px;
+  }
+
+  /* Styling for list label */
+  #list-label {
+    line-height: 110px;
+  }
+
+  /* Styling for list input */
+  #list-input {
+    color: white;
+    background-color: rgb(49, 47, 47);
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: roboto-medium;
+    font-size: 25px;
+    text-shadow: 3px 3px black;
+    line-height: 32px;
+    border: solid black 2px;
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+    margin-top: 0px;
+  }
+
+  /* Styling for Randomized List Table */
+  #list-table {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 }
